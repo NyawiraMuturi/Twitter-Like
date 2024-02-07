@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
 import AuthForm from '../../components/forms/authForm'
-
+import { Box, Center, HStack, Spacer, Text, VStack, Flex } from '@chakra-ui/react'
 
 const Login = () => {
 
@@ -7,7 +8,7 @@ const Login = () => {
   const loginFields = [
     {
       name: 'email',
-      label: 'Email',
+      placeholder: 'Phone number or email address',
       validation: {
         required: 'Email is required',
         pattern: {
@@ -18,7 +19,7 @@ const Login = () => {
     },
     {
       name: 'password',
-      label: 'Password',
+      placeholder: 'Password',
       type: 'password',
       validation: {
         required: 'Password is required',
@@ -26,12 +27,27 @@ const Login = () => {
     },
   ];
 
-  const onSubmit =() => {
+  const onSubmit = () => {
     mutate(loginFields.name)
   }
 
   return (
-     <AuthForm heading='LOGIN' onSubmit={onSubmit} inputFields={loginFields} text='LOGIN' linkText='Forgot Password?' link='/forgot-password'/>
+
+    <VStack>
+      <AuthForm heading='Log in to Twitter' onSubmit={onSubmit} inputFields={loginFields} text='Login' />
+      <Flex gap={120} pt={4} >
+        <Text color='primary.accent'>
+          <Link>Forgot Password?</Link>
+        </Text>
+        <Text color='primary.accent'>
+          <Link to='/sign-up'>Sign up to Twitter</Link>
+        </Text>
+      </Flex>
+
+
+    </VStack>
+
+
 
   )
 }
