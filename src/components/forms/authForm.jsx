@@ -1,19 +1,16 @@
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom'
 import {
     FormControl,
-    Flex,
     Box,
     Image,
     Heading,
     Input,
     Text,
     Button,
-    VStack
 } from '@chakra-ui/react'
 import twitter from '../../assets/icons/twitter.png'
 
-const AuthForm = ({ inputFields, onSubmit, link, text, linkText, heading }) => {
+const AuthForm = ({ inputFields, onSubmit, text, heading }) => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
