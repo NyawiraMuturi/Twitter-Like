@@ -1,3 +1,5 @@
+
+
 export const footerText =[
     {
         
@@ -46,4 +48,19 @@ export const footerText =[
         title: '© 2021 Twitter, Inc.', 
     }, 
     
+]
+
+export const leftNavData = [
+    {
+        icon: 'home.svg' ,
+        title: 'Home',
+        link: '/'
+    },
+    {
+        icon: 'profile.svg' ,
+        title: 'Profile',
+        link:'/profile'
+    },
+
+
 ]
