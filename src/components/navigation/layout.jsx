@@ -9,7 +9,7 @@ const Layout = () => {
       <Box w='15%'>
         <LeftNav />
       </Box>
-      <Box w='60%'>
+      <Box w='60%' overflowY='auto'>
         <Outlet />
       </Box>
       <Box  w='25%'>

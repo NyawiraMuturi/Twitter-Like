@@ -1,4 +1,4 @@
-import { Box, HStack, Input } from "@chakra-ui/react"
+import { Box, HStack, Input, Text } from "@chakra-ui/react"
 import TrendsCard from "../cards/trendsCard"
 import {SearchIcon} from '@chakra-ui/icons'
 

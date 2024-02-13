@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import AuthForm from '../../components/forms/authForm'
+import { VStack, Flex, Text } from '@chakra-ui/react';
 
 const Login = () => {
 

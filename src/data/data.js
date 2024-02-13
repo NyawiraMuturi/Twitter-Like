@@ -62,5 +62,43 @@ export const leftNavData = [
         link:'/profile'
     },
 
+    
+
 
 ]
+
+export const tweets = [
+    {
+      id: 1,
+      username: 'user1',
+      profileImage: 'user1.jpg',
+      content: 'This is a text tweet',
+      timestamp: '10 minutes ago'
+    },
+    {
+      id: 2,
+      username: 'user2',
+      profileImage: 'user2.jpg',
+      content: 'This is an image tweet',
+      image: 'tweet.svg',
+      timestamp: '1 hour ago'
+    },
+    {
+      id: 3,
+      username: 'user3',
+      profileImage: 'user3.jpg',
+      content: 'This is a tweet with both text and image',
+      image: 'tweet.svg',
+      timestamp: '2 days ago'
+    },
+    {
+        id: 4,
+        username: 'user3',
+        profileImage: 'user3.jpg',
+        
+        image: 'tweet.svg',
+        timestamp: '2 days ago'
+      }
+
+  ];
+  
