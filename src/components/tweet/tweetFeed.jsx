@@ -1,20 +1,21 @@
 import {Avatar, Box, Card, CardBody, Divider, HStack, Icon, Image, Stack, Text} from '@chakra-ui/react'
-import { tweets } from '../../data/data';
 import { IoMdStats } from "react-icons/io";
 import { FaRegComment } from "react-icons/fa6";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { LiaRetweetSolid } from "react-icons/lia";
 import { BsUpload } from "react-icons/bs";
 
-const TweetFeed = () => {
+const TweetFeed = ({tweets}) => {
   return (
-    <Box>
+    <Box >
         {tweets.map((tweet)=> (
           <Box>
         <Card 
           direction={{ base: 'column', sm: 'row' }}
+          px={4}
           overflow='hidden'
-          key={tweet.id}>
+          boxShadow={'none'}
+          key={tweet?.id}>
             <Avatar src='https://bit.ly/sage-adebayo' my={5}/>
             <Stack>
               <CardBody>
@@ -23,9 +24,9 @@ const TweetFeed = () => {
                 <Text>{tweet?.id}</Text>
                 <Text>{tweet?.timestamp}</Text>
                 </HStack>
-                {tweet.content && <Text>{tweet?.content}</Text> }
+                {tweet?.content && <Text>{tweet?.content}</Text> }
                 
-                 {tweet.image && <Image src={tweet?.image} my={4}/>}
+                 {tweet?.image && <Image src={tweet?.image} my={4}/>}
              
 
               <HStack>

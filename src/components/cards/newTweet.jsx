@@ -1,4 +1,4 @@
-import { Card, Image, Text, Button, CardBody, CardFooter, Textarea, HStack, Stack, Avatar, Spacer} from '@chakra-ui/react'
+import { Card, Button, CardBody, Textarea, HStack, Stack, Avatar, Spacer} from '@chakra-ui/react'
 import {Icon} from '@chakra-ui/icons'
 import { CiImageOn } from "react-icons/ci";
 import { MdOutlineGifBox } from "react-icons/md";
@@ -11,6 +11,8 @@ const NewTweet = () => {
     <Card
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'
+      px={4}
+      boxShadow={'none'}
     >
       <Avatar name='Segun Adebayo' src='https://bit.ly/sage-adebayo' my={5}/>
 

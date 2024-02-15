@@ -5,7 +5,7 @@ import {SearchIcon} from '@chakra-ui/icons'
 
 const RightNav = () => {
   return (
-    <Box borderLeft='1px' borderColor='#D8D8D8' p={5}>
+    <Box pl={4} >
       <HStack bg='#EFF3F4' borderRadius='3xl' py={2} px={4} mb={5}>
         <SearchIcon />
         <Input placeholder="search" h='80%' border='none'/>
